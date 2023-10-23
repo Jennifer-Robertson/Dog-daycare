@@ -1,0 +1,117 @@
+---
+title: "About"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "about/"
+eleventyNavigation:
+  key: About Us
+  order: 200
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/cabinets2-m.jpg"
+    />
+    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/cabinets2.jpg"
+      alt="kitchen cabinets"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/cabinets2-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/cabinets2.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/cabinets2.jpg"
+          alt="cabinets"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/construction-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/construction.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/construction.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">Trek and Trot</h2>
+      <p class="cs-text">
+        At Trek and Trot, we're not just a pet walking service – we're your
+        pet's passport to a world of exciting outdoor experiences. We understand
+        that your furry family members deserve more than just a quick stroll
+        around the block. That's why we're here to introduce them to a world of
+        hiking, swimming, splashing, and exploration!
+      </p>
+      <p class="cs-text">
+        Our passion for pets and the great outdoors is at the heart of
+        everything we do. We believe that every dog, big or small, deserves the
+        opportunity to run through lush trails, cool off in refreshing waters,
+        and embark on thrilling adventures. With a team of dedicated and
+        animal-loving professionals, we're here to make sure your pets live life
+        to the fullest.
+      </p>
+
+      <p class="cs-flex-p">
+        We understand that every pet is unique, and their adventure preferences
+        vary. That's why we offer a range of customizable services to cater to
+        your pet's specific needs and energy levels. From leisurely walks to
+        high-energy treks, we've got it covered.
+      </p>
+
+      <a href="/projects" class="cs-button-solid">Our Projects</a>
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}

@@ -1,0 +1,15 @@
+{
+  "name": "Trek and Trot",
+  "email": "codewithjenr@gmail.com",
+  "phoneForTel": "999-999-9999",
+  "phoneFormatted": "(999) 999-9999",
+  "address": {
+    "lineOne": "Carlisle PA",
+    "lineTwo": "Second Address Line",
+    "city": "Carlisle",
+    "state": "PA",
+    "zip": "17015",
+    "mapLink": "https://maps.app.goo.gl/pt9i96fy7YRqTtD2A"
+  },
+  "domain": "www.test.app"
+}

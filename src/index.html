@@ -1,0 +1,569 @@
+---
+title: "Dog Adventures"
+description: "premium dog daycare, walking, hiking service"
+preloadImg: "/assets/images/landing.jpg"
+permalink: "/"
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+
+<!-- Script for Netlify Identity -->
+<script
+  defer
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero">
+  <div class="cs-container">
+    <div class="cs-flex-group">
+      <span class="cs-topper">Let your dog explore nature</span>
+      <h1 class="cs-title">Trek and Trot</h1>
+      <p class="cs-text">
+        We're not your ordinary pet walking service. We're adventurers at heart,
+        and we believe that every dog should have that same experience.
+      </p>
+      <a href="/about" class="cs-button-solid">Explore More</a>
+      <a href="/contact" class="cs-button-transparent">
+        <img
+          class="cs-img"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+          alt="play icon"
+          width="17"
+          height="17"
+        />
+        Get in Touch
+      </a>
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp" />
+    <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/landing.jpg"
+      alt="new home"
+      width="2500"
+      height="1667"
+      loading="eager"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+  <!-- Get Icons From flaticon.com -->
+  <div class="card">
+    <picture>
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/svgs/service1.svg"
+        alt="appliance"
+        width="48"
+        height="48"
+      />
+    </picture>
+    <h2>Daycare</h2>
+    <p>
+      We have schduled 'home days' where your dog can run and play with their
+      friends in large, fenced in yard.
+    </p>
+  </div>
+  <div class="card">
+    <picture>
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/svgs/service2.svg"
+        alt="appliance"
+        width="48"
+        height="48"
+      />
+    </picture>
+    <h2>Hiking</h2>
+    <p>
+      Pack hikes are a great way for your furry friends to explore the outdoors
+      on secluded hiking trails.
+    </p>
+  </div>
+  <div class="card">
+    <picture>
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/svgs/service3.svg"
+        alt="appliance"
+        width="48"
+        height="48"
+      />
+    </picture>
+    <h2>Boarding</h2>
+    <p>Our home is your dog's home! Cozy nights and fun days, your dog will</p>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/cabinets2-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/cabinets2.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/cabinets2.jpg"
+          alt="cabinets"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/construction-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/construction.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/construction.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">About Trek and Trot</h2>
+      <p class="cs-text">
+        At Trek and Trot, we're not just a pet walking service – we're your
+        pet's passport to a world of exciting outdoor experiences. We understand
+        that your furry family members deserve more than just a quick stroll
+        around the block. That's why we're here to introduce them to a world of
+        hiking, swimming, splashing, and exploration!
+      </p>
+      <p class="cs-text">
+        Our passion for pets and the great outdoors is at the heart of
+        everything we do. We believe that every dog, big or small, deserves the
+        opportunity to run through lush trails, cool off in refreshing waters,
+        and embark on thrilling adventures. With a team of dedicated and
+        animal-loving professionals, we're here to make sure your pets live life
+        to the fullest.
+      </p>
+
+      <p class="cs-flex-p">
+        We understand that every pet is unique, and their adventure preferences
+        vary. That's why we offer a range of customizable services to cater to
+        your pet's specific needs and energy levels. From leisurely walks to
+        high-energy treks, we've got it covered.
+      </p>
+
+      <a href="/about" class="cs-button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Extra Content To Rank             -->
+<!-- ============================================ -->
+
+<section id="sbs-r">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/construction-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/construction.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/construction.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="560"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/cabinets2-m.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/cabinets2.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/cabinets2.jpg"
+          alt="cabinets"
+          loading="lazy"
+          width="400"
+          height="560"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h2 class="cs-title">Talk about a main service keyword</h2>
+      <p class="cs-text">
+        Trek and Trot Pet Adventures offers premier pet walking and outdoor
+        experiences for dogs, including hiking, swimming, and exploring. Our
+        adventure-driven approach prioritizes safety, customization, and pet
+        care. Join us for tailored outdoor fun and bonding with your furry
+        friend. Explore the great outdoors with Trek and Trot today!
+      </p>
+      <!-- <p class="cs-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur,
+        iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi
+        fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores
+        ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo
+        quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Doloribus modi laudantium voluptatibus rem libero
+        error minus quia eligendi sapiente eos.
+      </p> -->
+      <a href="/blog" class="cs-button-solid">Read our Blog</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery">
+  <div class="cs-container">
+    <span class="cs-topper">Our Portfolio</span>
+    <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
+    <div class="cs-image-group">
+      <!-- Row 1-->
+      <div class="cs-row cs-row-1">
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+        <picture class="cs-picture cs-picture1">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port1-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port1.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port1.jpg"
+            alt="new hallway"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture2">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port4-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port4.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port4.jpg"
+            alt="new home construction"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture3">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port7-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port7.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port7.jpg"
+            alt="building a new wall"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+      </div>
+      <!-- Row 2 -->
+      <div class="cs-row cs-row-2">
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+        <picture class="cs-picture cs-picture1">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port2-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port2.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port2.jpg"
+            alt="new kitchen"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture2">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port5-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port5.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port5.jpg"
+            alt="apartment addition"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture3">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port8-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port8.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port8.jpg"
+            alt="kew kitchen cabinets"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+      </div>
+      <!-- Row 3 -->
+      <div class="cs-row cs-row-3">
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+        <picture class="cs-picture cs-picture1">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port3-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port3.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port3.jpg"
+            alt="new kitchen"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture2">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port6-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port6.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port6.jpg"
+            alt="apartment addition"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture3">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/portfolio/port9-m.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/portfolio/port9.jpg"
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/portfolio/port9.jpg"
+            alt="kew kitchen cabinets"
+            loading="lazy"
+            width="400"
+            height="560"
+          />
+        </picture>
+      </div>
+    </div>
+    <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews">
+  <div class="cs-container">
+    <span class="cs-topper">Our Reviews</span>
+    <h2 class="cs-title">See what these pet parents have to say!</h2>
+    <p class="cs-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor
+      volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida
+      viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo,
+      ornare. Lorem ipsum dolor sit amet.
+    </p>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/profile.svg"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-p">
+          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
+          habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
+          ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat
+          viverra massa urna, volutpat orci imperdiet eget eget.
+        </p>
+        <span class="cs-reviewer">
+          Jon Doe
+          <!-- <span class="cs-desc">Homeowner</span> -->
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/profile.svg"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-p">
+          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
+          habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
+          ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat
+          viverra massa urna, volutpat orci imperdiet eget eget.
+        </p>
+        <span class="cs-reviewer">
+          Jane Doe
+          <!-- <span class="cs-desc">Homeowner</span> -->
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+    </ul>
+    <a aria-label="read more reviews" href="/reviews" class="cs-button-solid"
+      >Our Reviews</a
+    >
+  </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}
